@@ -1,0 +1,66 @@
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    border: 1px white ;
+}
+.logo{
+    margin-left: 20px;
+}
+.profile-wrapper{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+.profile-logo{
+    background-color: white;
+    border-radius: 50%;
+}
+.group_div{
+    display: flex;
+    gap:10px;
+}
+.link{
+    font-weight: 600;
+    font-size: 600;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+}
+.link:hover{
+    color: green;
+}
+
+.profile-menu{
+    position: absolute;
+    top: 11vh;
+    right: 10px;
+    width: 10%;
+    height: 30%;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 13px 1px rgba(7, 24, 20, 0.08);
+    z-index: 2;
+    display: none;
+}
+.profile,.setting,.about{
+    font-size:16px;
+    font-weight: 500;
+    margin: 5px;
+}
+.logout img{
+    width: 25px;
+    height: 25px;
+}
+.profile-logo:hover .profile-menu{
+    display: block;
+}

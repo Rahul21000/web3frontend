@@ -1,0 +1,29 @@
+.container{
+    position:relative;
+    padding: 10px;
+    margin: 0px;
+
+}
+.heading{
+    text-align: center;
+    color: blue;
+}
+.search-box{
+position: absolute;
+top:10px;
+left:10px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.pagination{
+    margin-top: 5px;
+    text-align: center;
+}
+.pagination button{
+    margin: 0 2px 2px 0;
+}
+

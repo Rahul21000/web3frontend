@@ -1,0 +1,116 @@
+.card_div {
+  min-width: 240px;
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  box-shadow: 0px 8.88888931274414px 53.33333206176758px 0px
+    rgba(226, 236, 249, 0.5);
+  z-index: 1;
+  position: relative;
+}
+.loading {
+  text-align: center;
+  font-size: large;
+  color: blue;
+  font-family: "Outfit-Medium", Helvetica;
+}
+.name,
+.email,
+.gender {
+  margin: 10px 0px 0px 10px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 10.7px;
+}
+.avtar {
+  position: absolute;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.delete-icon {
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.add_cards {
+  width: 80px;
+  margin: 10px auto 0px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.added_card {
+  width: 80px;
+  margin: 10px auto 0px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.update_div {
+  width: 30%;
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid silver;
+  border-radius: 15px;
+  box-shadow: 0px 8.88888931274414px 53.33333206176758px 0px
+    rgba(226, 236, 249, 0.5);
+  z-index: 3;
+  background-color: #fafafa;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+.icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 5px;
+}
+.close,.delete,.edit:hover{
+cursor: pointer;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+button {
+  border-radius: 20px;
+}
+button[type="submit"] {
+  padding: 5px;
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+button[type="reset"] {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
