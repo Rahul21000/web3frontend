@@ -31,7 +31,7 @@ const initialState:InitialState={
 }
 
 export const readUser=createAsyncThunk("readUser",async()=>{
-  const response=await fetch('http://localhost:5000/api/users');
+  const response=await fetch('http://localhost:5000/api/user');
   try{
     const result =await response.json();
     return result;
@@ -43,7 +43,7 @@ export const readUser=createAsyncThunk("readUser",async()=>{
 })
 
 export const createUser=createAsyncThunk("createUser",async(data:FormType)=>{
-const response=await fetch('http://localhost:5000/api/users',{
+const response=await fetch('http://localhost:5000/api/user',{
 method:"POST",
 headers:{"content-type":"application/json"},
 body:JSON.stringify(data)
@@ -60,7 +60,7 @@ catch(error){
 export const updateUser:any=createAsyncThunk("updateUser",async(data:FormType)=>{
   console.log("updatedata",data);
   
-  const response=await fetch(`http://localhost:5000//api/users/${data.id}`,{
+  const response=await fetch(`http://localhost:5000//api/user/${data.id}`,{
   method:"PUT",
   headers:{"content-type":"application/json"},
   body:JSON.stringify(data)
@@ -75,7 +75,7 @@ export const updateUser:any=createAsyncThunk("updateUser",async(data:FormType)=>
   })
 
   export const deleteUser=createAsyncThunk("deleteUser",async(id:number)=>{
-    const response=await fetch(`http://localhost:5000/api/users/${id}`,{
+    const response=await fetch(`http://localhost:5000/api/user/${id}`,{
     method:"DELETE",
     });
     try{
